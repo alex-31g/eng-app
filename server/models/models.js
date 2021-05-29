@@ -21,13 +21,13 @@ const User = sequelize.define("user", {
   ip: { type: DataTypes.TEXT },
 });
 
-const FollowUser = sequelize.define("followUser", {
-  followUserId: { type: DataTypes.STRING, allowNull: false },
+const Follower = sequelize.define("follower", {
+  followerId: { type: DataTypes.STRING, allowNull: false },
 });
 
-User.hasMany(FollowUser);
+User.hasMany(Follower);
 
 module.exports = {
   User,
-  FollowUser,
+  Follower,
 };
