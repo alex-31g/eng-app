@@ -1,3 +1,5 @@
+const ApiError = require("../error/api.error");
+
 class UserController {
   async checkRegistration(req, res) {}
 
